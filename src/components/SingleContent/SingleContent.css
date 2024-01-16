@@ -1,0 +1,42 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px 0;
+  width: 200px;
+  background-color: #282c34;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.media:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 550px) {
+  .media {
+    width: 46%;
+  }
+}
+
+.poster {
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 17px;
+}
+.subTitle {
+  display: flex;
+}
+.subTitleMain {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+  padding-bottom: 3px;
+}
