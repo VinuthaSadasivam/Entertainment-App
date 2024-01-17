@@ -1,7 +1,7 @@
 import {
   TextField,
   ThemeProvider,
-  createTheme,
+  createMuiTheme,
   Button,
   Tabs,
   Tab,
@@ -19,7 +19,7 @@ const Search = () => {
   const [content, setContent] = useState([]);
   const [numOfPages, setNumOfPages] = useState();
 
-  const darkTheme = createTheme({
+  const darkTheme = createMuiTheme({
     palette: {
       type: "dark",
       primary: {

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import Box from "@material-ui/core/Box";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
@@ -7,17 +6,18 @@ import WhatshotIcon from "@material-ui/icons/Whatshot";
 import TvIcon from "@material-ui/icons/Tv";
 import MovieIcon from "@material-ui/icons/Movie";
 import SearchIcon from "@material-ui/icons/Search";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
-  const history = useNavigate();
+  const history = useHistory();
 
   useEffect(() => {
-    if (value === 0) history("/");
-    else if (value === 1) history("/movies");
-    else if (value === 2) history("/series");
-    else if (value === 3) history("/search");
+    if (value === 0) history.push("/");
+    else if (value === 1) history.push("/movies");
+    else if (value === 2) history.push("/series");
+    else if (value === 3) history.push("/search");
   }, [value, history]);
 
   return (
