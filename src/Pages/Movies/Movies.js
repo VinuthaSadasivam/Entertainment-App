@@ -26,7 +26,6 @@ const Movies = () => {
     
     setContent(data.results);
     setNumOfPages(data.total_pages);
-    console.log(data);
   };
 
   useEffect(() => {
