@@ -32,7 +32,6 @@ const Genre = ({
     );
 
     setGenres(data.genres);
-    console.log(data);
   };
 
   useEffect(() => {
