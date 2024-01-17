@@ -65,7 +65,6 @@ export default function ContentModal({ children, media_type, id }) {
         },
       }
     );
-    console.log(data);
     setVideo(data.results[0]?.key);
   };
 
